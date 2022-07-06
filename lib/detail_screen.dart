@@ -58,6 +58,30 @@ class DetailScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 16.0),
                 ),
               ),
+              Container(
+                height: 150,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Image.asset('images/menara_kudus_1.jpg'),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Image.asset('images/menara_kudus_2.jpg'),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Image.asset('images/menara_kudus_3.jpg'),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Image.asset('images/menara_kudus_4.jpg'),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
