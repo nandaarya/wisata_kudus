@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wisata_kudus/main_screen.dart';
 import 'detail_screen.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Wisata Kudus',
       theme: ThemeData(),
-      home: DetailScreen(),
+      home: MainScreen(),
     );
   }
 }
