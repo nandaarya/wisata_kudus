@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:wisata_kudus/model/tourism_place.dart';
 
 var informationTextStyle = TextStyle(fontFamily: 'Oxygen');
 
 class DetailScreen extends StatelessWidget {
+  final TourismPlace place;
+
+  DetailScreen({required this.place});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,11 +15,11 @@ class DetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Image.asset('images/menara_kudus.jpg'),
+            Image.asset(place.imageAsset),
             Container(
                 margin: EdgeInsets.only(top: 16.0),
                 child: Text(
-                    'Menara Kudus',
+                    place.name,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Staatliches',
@@ -32,17 +37,17 @@ class DetailScreen extends StatelessWidget {
                       Icon(Icons.calendar_today),
                       SizedBox(height: 8.0),
                       Text(
-                        'Buka Setiap Hari',
+                        place.openDays,
                         style: informationTextStyle,
                       ),
                     ],
                   ),
                   Column(
                     children: <Widget>[
-                      Icon(Icons.query_builder),
+                      Icon(Icons.access_time),
                       SizedBox(height: 8.0),
                       Text(
-                        '00.00 - 24.00',
+                        place.openTime,
                         style: informationTextStyle,
                       ),
                     ],
@@ -52,7 +57,7 @@ class DetailScreen extends StatelessWidget {
                       Icon(Icons.monetization_on),
                       SizedBox(height: 8.0),
                       Text(
-                        'Gratis',
+                        place.ticketPrice,
                         style: informationTextStyle,
                       ),
                     ],
@@ -63,45 +68,27 @@ class DetailScreen extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(16.0),
               child: Text(
-                'Sebagai salah satu tempat bersejarah di Kudus, Menara kudus menjadi objek wisata religi yang tidak pernah sepi pengunjung. Di kawasan Menara Kudus terdapat makan Sunan Kudus yang selalu dikunjungi pengunjung untuk berziarah. selain itu, Menara dan Masjid dikawasan depan Menara Kudus juga menjadi spot foto yang bagus bagi pengunjung.',
+                place.description,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 16.0),
+                style: TextStyle(
+                  fontSize: 16.0,
+                  fontFamily: 'Oxygen',
+                ),
               ),
             ),
             Container(
               height: 150,
               child: ListView(
                 scrollDirection: Axis.horizontal,
-                children: <Widget>[
-                  Padding(
+                children: place.imageAsset2.map((images) {
+                  return Padding(
                     padding: const EdgeInsets.all(4.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      child: Image.asset('images/menara_kudus_1.jpg'),
+                      child: Image.asset(images),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.asset('images/menara_kudus_2.jpg'),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.asset('images/menara_kudus_3.jpg'),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.asset('images/menara_kudus_4.jpg'),
-                    ),
-                  ),
-                ],
+                  );
+                }).toList(),
               ),
             )
           ],
