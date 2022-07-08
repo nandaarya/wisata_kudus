@@ -53,4 +53,20 @@ var tourismPlaceList = [
       'images/museum_kretek_4.jpg',
     ],
   ),
+  TourismPlace(
+    name: 'Museum Jenang',
+    location: 'Kudus',
+    description:
+    'Museum ini diklaim menjadi museum jenang pertama dan satu-satunya di Indonesia. Museum Jenang Mubarok Food meneguhkan bahwa Kudus menjadi kota penghasil jenang terbesar di Jawa Tengah. Museum ini memberi deskripsi bagaimana perkembangan jenang di Kudus dari dulu hingga sekarang. selain itu, Museum Jenang menyajikan berbagai kisah Kudus tempo dulu.',
+    openDays: 'Buka Setiap Hari',
+    openTime: '09:00 - 21:00',
+    ticketPrice: 'RP 10.000',
+    imageAsset: 'images/museum_jenang.jpg',
+    imageAsset2: [
+      'images/museum_jenang_1.jpg',
+      'images/museum_jenang_2.jpeg',
+      'images/museum_jenang_3.jpg',
+      'images/museum_jenang_4.jpeg',
+    ],
+  ),
 ];
