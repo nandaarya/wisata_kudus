@@ -69,4 +69,20 @@ var tourismPlaceList = [
       'images/museum_jenang_4.jpeg',
     ],
   ),
+  TourismPlace(
+    name: 'Bendungan Logung',
+    location: 'Kudus',
+    description:
+    'Bendungan Logung yang berada di perbatasan Desa Kandangmas dan Desa Tanjungrejo Kecamatan Dawe, Kabupaten Kudus, mampu mengangkat potensi desa untuk menjadi wisata. Bendungan Logung mulai dibangun sejak 2014 dan diresmikan pada 2018 itu memiliki pesona alam yang indah. Panorama bebukitan yang mengelilingi telaga, dapat memanjakan mata. Itulah yang kemudian menjadi magnet wisata yang dikembangkan masyarakat sekitar menjadi wisata.',
+    openDays: 'Buka Setiap Hari',
+    openTime: '07:00 - 16:00',
+    ticketPrice: 'RP 5.000',
+    imageAsset: 'images/bendungan_logung.jpg',
+    imageAsset2: [
+      'images/bendungan_logung_1.jpg',
+      'images/bendungan_logung_2.jpg',
+      'images/bendungan_logung_3.jpg',
+      'images/bendungan_logung_4.jpeg',
+    ],
+  ),
 ];
