@@ -85,4 +85,20 @@ var tourismPlaceList = [
       'images/bendungan_logung_4.jpeg',
     ],
   ),
+  TourismPlace(
+    name: 'Natas Angin',
+    location: 'Kudus',
+    description:
+    'Puncak Natas Angin adalah salah satu dari tujuh puncak Gunung Muria yang dikenal sebagai 7 Summits of Muria. Dari ke tujuh puncak tersebut, Puncak Natas Angin menjadi salah satu dari empat jalur pendakian utama di Gunung Muria. Puncak Natas Angin masuk dalam kawasan Kabupaten Kudus, Jawa Tengah dengan ketinggian 1.602 meter di atas permukaan laut (mdpl).',
+    openDays: 'Buka Setiap Hari',
+    openTime: '00:00 - 24:00',
+    ticketPrice: 'Gratis',
+    imageAsset: 'images/natas_angin.jpg',
+    imageAsset2: [
+      'images/natas_angin_1.jpg',
+      'images/natas_angin_2.jpg',
+      'images/natas_angin_3.jpg',
+      'images/natas_angin_4.jpg',
+    ],
+  ),
 ];
