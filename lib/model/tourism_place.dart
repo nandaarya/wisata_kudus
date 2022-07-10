@@ -111,10 +111,10 @@ var tourismPlaceList = [
     ticketPrice: 'RP 7.500',
     imageAsset: 'images/air_terjun_montel.jpg',
     imageAsset2: [
-      '',
-      '',
-      '',
-      '',
+      'images/air_terjun_montel_1.jpg',
+      'images/air_terjun_montel_2.JPG',
+      'images/air_terjun_montel_3.jpeg',
+      'images/air_terjun_montel_4.jpg',
     ],
   ),
   TourismPlace(
