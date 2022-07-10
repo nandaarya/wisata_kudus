@@ -127,10 +127,10 @@ var tourismPlaceList = [
     ticketPrice: 'Gratis',
     imageAsset: 'images/air_tiga_rasa.jpg',
     imageAsset2: [
-      '',
-      '',
-      '',
-      '',
+      'images/air_tiga_rasa_1.jpeg',
+      'images/air_tiga_rasa_2.jpeg',
+      'images/air_tiga_rasa_3.jpg',
+      'images/air_tiga_rasa_4.jpg',
     ],
   ),
 ];
