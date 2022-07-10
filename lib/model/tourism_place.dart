@@ -105,7 +105,7 @@ var tourismPlaceList = [
     name: 'Air Terjun Montel',
     location: 'Kudus',
     description:
-    '',
+    'Air Terjun Montel menjadi obyek wisata alam murah di Kudus yang cocok untuk ngadem di hari libur bersama teman maupun keluarga. Alam memang menjadi daya tarik destinasi wisata yang akan menghipnotis siapa saja yang menikmatinya. Air Terjun Montel di Kabupaten Kudus yang menyuguhkan pesona alam luar biasa indah. Salah satu pesona alam yang menakjubkan yaitu air terjun asri dan terjaga.',
     openDays: 'Buka Setiap Hari',
     openTime: '08:00 - 16:00',
     ticketPrice: 'RP 7.500',
@@ -121,7 +121,7 @@ var tourismPlaceList = [
     name: 'Air Tiga Rasa',
     location: 'Kudus',
     description:
-    '',
+    'Objek wisata ini memang beda dengan lainnya. Sebab terdapat mata air tiga rasa, yakni dengan rasa yang berbeda. Tentu hal itulah yang bikin orang penasaran. Sumber mata air pertama mempunyai rasa mirip stroberi agak tawar, sumber mata air kedua mempunyai rasa yang mirip dengan minuman ringan bersoda seperti "Sprite", dan sumber mata air ketiga mempunyai rasa mirip tuak.',
     openDays: 'Buka Setiap Hari',
     openTime: '00:00 - 24:00',
     ticketPrice: 'Gratis',
