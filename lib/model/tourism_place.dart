@@ -101,4 +101,36 @@ var tourismPlaceList = [
       'images/natas_angin_4.jpg',
     ],
   ),
+  TourismPlace(
+    name: 'Air Terjun Montel',
+    location: 'Kudus',
+    description:
+    '',
+    openDays: 'Buka Setiap Hari',
+    openTime: '08:00 - 16:00',
+    ticketPrice: 'RP 7.500',
+    imageAsset: 'images/air_terjun_montel.jpg',
+    imageAsset2: [
+      '',
+      '',
+      '',
+      '',
+    ],
+  ),
+  TourismPlace(
+    name: 'Air Tiga Rasa',
+    location: 'Kudus',
+    description:
+    '',
+    openDays: 'Buka Setiap Hari',
+    openTime: '00:00 - 24:00',
+    ticketPrice: 'Gratis',
+    imageAsset: 'images/air_tiga_rasa.jpg',
+    imageAsset2: [
+      '',
+      '',
+      '',
+      '',
+    ],
+  ),
 ];
