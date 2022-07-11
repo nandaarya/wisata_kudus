@@ -7,7 +7,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Wisata Kudus'),
+        title: Text('Wisata Kudus. Size: ${MediaQuery.of(context).size.width}'),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) {
