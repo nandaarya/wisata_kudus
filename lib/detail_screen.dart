@@ -18,11 +18,13 @@ class DetailScreen extends StatelessWidget {
             Stack(
               children: <Widget>[
                 Image.asset(place.imageAsset),
-                IconButton(
-                  icon: Icon(Icons.arrow_back),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
+                SafeArea(
+                  child: IconButton(
+                    icon: Icon(Icons.arrow_back),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  ),
                 ),
               ],
             ),
