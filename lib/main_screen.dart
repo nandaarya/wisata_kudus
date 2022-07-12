@@ -13,8 +13,10 @@ class MainScreen extends StatelessWidget {
         builder: (BuildContext context, BoxConstraints constrains) {
           if (constrains.maxWidth <= 700) {
             return TourismPlaceList();
+          } else if (constrains.maxWidth <= 1200) {
+            return TourismPlaceGrid(gridCount: 4);
           } else {
-            return TourismPlaceGrid();
+            return TourismPlaceGrid(gridCount: 6);
           }
         },
       ),
@@ -73,12 +75,16 @@ class TourismPlaceList extends StatelessWidget {
 }
 
 class TourismPlaceGrid extends StatelessWidget {
+  final int gridCount;
+
+  TourismPlaceGrid({required this.gridCount});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(24.0),
       child: GridView.count(
-        crossAxisCount: 4,
+        crossAxisCount: gridCount,
         children: tourismPlaceList.map((place) {
           return InkWell(
             onTap: () {
