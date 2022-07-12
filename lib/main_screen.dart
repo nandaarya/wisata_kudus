@@ -9,7 +9,15 @@ class MainScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Wisata Kudus. Size: ${MediaQuery.of(context).size.width}'),
       ),
-      body: TourismPlaceList(),
+      body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constrains) {
+          if (constrains.maxWidth <= 600) {
+            return TourismPlaceList();
+          } else {
+            return TourismPlaceGrid();
+          }
+        },
+      ),
     );
   }
 }
