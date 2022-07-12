@@ -85,6 +85,8 @@ class TourismPlaceGrid extends StatelessWidget {
       padding: const EdgeInsets.all(24.0),
       child: GridView.count(
         crossAxisCount: gridCount,
+        crossAxisSpacing: 16,
+        mainAxisSpacing: 16,
         children: tourismPlaceList.map((place) {
           return InkWell(
             onTap: () {
