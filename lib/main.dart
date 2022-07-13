@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:wisata_kudus/main_screen.dart';
-import 'detail_screen.dart';
 
 void main() {
   runApp(MyApp());
