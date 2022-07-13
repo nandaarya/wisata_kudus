@@ -10,6 +10,24 @@ class DetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constraints) {
+      if (constraints.maxWidth > 800) {
+        return DetailWebPage(place: place);
+      } else {
+        return DetailMobilePage(place: place);
+      }
+      },
+    );
+  }
+}
+
+class DetailMobilePage extends StatelessWidget {
+  final TourismPlace place;
+  const DetailMobilePage({required this.place});
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -22,22 +40,22 @@ class DetailScreen extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.grey,
-                          child: IconButton(
-                            icon: Icon(
-                              Icons.arrow_back,
-                              color: Colors.white,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          CircleAvatar(
+                            backgroundColor: Colors.grey,
+                            child: IconButton(
+                              icon: Icon(
+                                Icons.arrow_back,
+                                color: Colors.white,
+                              ),
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
                             ),
-                            onPressed: () {
-                              Navigator.pop(context);
-                            },
                           ),
-                        ),
-                        FavoriteButton(),
-                      ]
+                          FavoriteButton(),
+                        ]
                     ),
                   ),
                 ),
@@ -124,6 +142,7 @@ class DetailScreen extends StatelessWidget {
     );
   }
 }
+
 
 class FavoriteButton extends StatefulWidget {
   @override
