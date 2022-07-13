@@ -143,6 +143,33 @@ class DetailMobilePage extends StatelessWidget {
   }
 }
 
+class DetailWebPage extends StatelessWidget {
+  final TourismPlace place;
+  const DetailWebPage({required this.place});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Wisata Bandung',
+            style: TextStyle(
+              fontFamily: 'Staatliches',
+              fontSize: 32,
+            ),
+          ),
+          SizedBox(height: 32),
+          Row(
+            children: [],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 
 class FavoriteButton extends StatefulWidget {
   @override
