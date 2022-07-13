@@ -180,20 +180,23 @@ class DetailWebPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10),
                           ),
                           SizedBox(height: 16),
-                          Container(
-                            height: 150,
-                            padding: const EdgeInsets.only(bottom: 16),
-                            child: ListView(
-                              scrollDirection: Axis.horizontal,
-                              children: place.imageAsset2.map((images) {
-                                return Padding(
-                                  padding: const EdgeInsets.all(4.0),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(10),
-                                    child: Image.asset(images),
-                                  ),
-                                );
-                              }).toList(),
+                          Scrollbar(
+                            thumbVisibility: true,
+                            child: Container(
+                              height: 150,
+                              padding: const EdgeInsets.only(bottom: 16),
+                              child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: place.imageAsset2.map((images) {
+                                  return Padding(
+                                    padding: const EdgeInsets.all(4.0),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(10),
+                                      child: Image.asset(images),
+                                    ),
+                                  );
+                                }).toList(),
+                              ),
                             ),
                           ),
                         ],
