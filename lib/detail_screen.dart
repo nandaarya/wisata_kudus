@@ -155,121 +155,126 @@ class DetailWebPage extends StatelessWidget {
           vertical: 16,
           horizontal: 64,
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Wisata Bandung',
-              style: TextStyle(
-                fontFamily: 'Staatliches',
-                fontSize: 32,
-              ),
-            ),
-            SizedBox(height: 32),
-            Row(
+        child: Center(
+          child: Container(
+            width: 1200,
+            child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(
-                  child: Column(
-                    children: [
-                      ClipRRect(
-                        child: Image.asset(place.imageAsset),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      SizedBox(height: 16),
-                      Container(
-                        height: 150,
-                        padding: const EdgeInsets.only(bottom: 16),
-                        child: ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: place.imageAsset2.map((images) {
-                            return Padding(
-                              padding: const EdgeInsets.all(4.0),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                child: Image.asset(images),
-                              ),
-                            );
-                          }).toList(),
-                        ),
-                      ),
-                    ],
+                Text(
+                  'Wisata Bandung',
+                  style: TextStyle(
+                    fontFamily: 'Staatliches',
+                    fontSize: 32,
                   ),
                 ),
-                SizedBox(width: 32),
-                Expanded(
-                  child: Card(
-                    child: Container(
-                      padding: const EdgeInsets.all(16),
+                SizedBox(height: 32),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
                       child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        children: <Widget>[
-                          Container(
-                            child: Text(
-                              place.name,
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 30.0,
-                                fontFamily: 'Staatliches',
-                              ),
-                            ),
+                        children: [
+                          ClipRRect(
+                            child: Image.asset(place.imageAsset),
+                            borderRadius: BorderRadius.circular(10),
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Row(
-                                children: <Widget>[
-                                  Icon(Icons.calendar_today),
-                                  SizedBox(width: 8.0),
-                                  Text(
-                                    place.openDays,
-                                    style: informationTextStyle,
+                          SizedBox(height: 16),
+                          Container(
+                            height: 150,
+                            padding: const EdgeInsets.only(bottom: 16),
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: place.imageAsset2.map((images) {
+                                return Padding(
+                                  padding: const EdgeInsets.all(4.0),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: Image.asset(images),
                                   ),
-                                ],
-                              ),
-                              FavoriteButton(),
-                            ],
-                          ),
-                          Row(
-                            children: <Widget>[
-                              Icon(Icons.access_time),
-                              SizedBox(width: 8.0),
-                              Text(
-                                place.openTime,
-                                style: informationTextStyle,
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 8.0),
-                          Row(
-                            children: <Widget>[
-                              Icon(Icons.monetization_on),
-                              SizedBox(width: 8.0),
-                              Text(
-                                place.ticketPrice,
-                                style: informationTextStyle,
-                              ),
-                            ],
-                          ),
-                          Container(
-                            padding: EdgeInsets.symmetric(vertical: 16.0),
-                            child: Text(
-                              place.description,
-                              textAlign: TextAlign.justify,
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontFamily: 'Oxygen',
-                              ),
+                                );
+                              }).toList(),
                             ),
                           ),
                         ],
                       ),
                     ),
-                  ),
+                    SizedBox(width: 32),
+                    Expanded(
+                      child: Card(
+                        child: Container(
+                          padding: const EdgeInsets.all(16),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: <Widget>[
+                              Container(
+                                child: Text(
+                                  place.name,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 30.0,
+                                    fontFamily: 'Staatliches',
+                                  ),
+                                ),
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Row(
+                                    children: <Widget>[
+                                      Icon(Icons.calendar_today),
+                                      SizedBox(width: 8.0),
+                                      Text(
+                                        place.openDays,
+                                        style: informationTextStyle,
+                                      ),
+                                    ],
+                                  ),
+                                  FavoriteButton(),
+                                ],
+                              ),
+                              Row(
+                                children: <Widget>[
+                                  Icon(Icons.access_time),
+                                  SizedBox(width: 8.0),
+                                  Text(
+                                    place.openTime,
+                                    style: informationTextStyle,
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 8.0),
+                              Row(
+                                children: <Widget>[
+                                  Icon(Icons.monetization_on),
+                                  SizedBox(width: 8.0),
+                                  Text(
+                                    place.ticketPrice,
+                                    style: informationTextStyle,
+                                  ),
+                                ],
+                              ),
+                              Container(
+                                padding: EdgeInsets.symmetric(vertical: 16.0),
+                                child: Text(
+                                  place.description,
+                                  textAlign: TextAlign.justify,
+                                  style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontFamily: 'Oxygen',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
-          ],
+          ),
         ),
       ),
     );
