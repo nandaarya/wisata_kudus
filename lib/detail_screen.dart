@@ -162,7 +162,85 @@ class DetailWebPage extends StatelessWidget {
           ),
           SizedBox(height: 32),
           Row(
-            children: [],
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Column(
+                  children: [],
+                ),
+              ),
+              SizedBox(width: 32),
+              Expanded(
+                child: Card(
+                  child: Container(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: <Widget>[
+                        Container(
+                          child: Text(
+                            place.name,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 30.0,
+                              fontFamily: 'Staatliches',
+                            ),
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: <Widget>[
+                                Icon(Icons.calendar_today),
+                                SizedBox(width: 8.0),
+                                Text(
+                                  place.openDays,
+                                  style: informationTextStyle,
+                                ),
+                              ],
+                            ),
+                            FavoriteButton(),
+                          ],
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Icon(Icons.access_time),
+                            SizedBox(width: 8.0),
+                            Text(
+                              place.openTime,
+                              style: informationTextStyle,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 8.0),
+                        Row(
+                          children: <Widget>[
+                            Icon(Icons.monetization_on),
+                            SizedBox(width: 8.0),
+                            Text(
+                              place.ticketPrice,
+                              style: informationTextStyle,
+                            ),
+                          ],
+                        ),
+                        Container(
+                          padding: EdgeInsets.symmetric(vertical: 16.0),
+                          child: Text(
+                            place.description,
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              fontSize: 16.0,
+                              fontFamily: 'Oxygen',
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
