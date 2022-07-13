@@ -166,7 +166,29 @@ class DetailWebPage extends StatelessWidget {
             children: [
               Expanded(
                 child: Column(
-                  children: [],
+                  children: [
+                    ClipRRect(
+                      child: Image.asset(place.imageAsset),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    SizedBox(height: 16),
+                    Container(
+                      height: 150,
+                      padding: const EdgeInsets.only(bottom: 16),
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: place.imageAsset2.map((images) {
+                          return Padding(
+                            padding: const EdgeInsets.all(4.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child: Image.asset(images),
+                            ),
+                          );
+                        }).toList(),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(width: 32),
@@ -247,7 +269,6 @@ class DetailWebPage extends StatelessWidget {
     );
   }
 }
-
 
 class FavoriteButton extends StatefulWidget {
   @override
