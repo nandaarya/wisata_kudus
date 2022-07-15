@@ -122,7 +122,7 @@ class DetailMobilePage extends StatelessWidget {
               ),
             ),
             Container(
-              height: 150,
+              height: 130,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: place.imageAsset2.map((images) {
@@ -130,7 +130,7 @@ class DetailMobilePage extends StatelessWidget {
                     padding: const EdgeInsets.all(4.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10),
-                      child: Image.asset(images),
+                      child: Image.asset(images, height: 130),
                     ),
                   );
                 }).toList(),
