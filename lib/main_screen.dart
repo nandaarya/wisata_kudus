@@ -77,12 +77,11 @@ class TourismPlaceList extends StatelessWidget {
 class TourismPlaceGrid extends StatelessWidget {
   final int gridCount;
 
-  TourismPlaceGrid({required this.gridCount});
+  TourismPlaceGrid({this.gridCount});
 
   @override
   Widget build(BuildContext context) {
     return Scrollbar(
-      thumbVisibility: true,
       child: Padding(
         padding: const EdgeInsets.all(24.0),
         child: GridView.count(

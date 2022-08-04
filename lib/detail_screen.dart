@@ -6,7 +6,7 @@ var informationTextStyle = TextStyle(fontFamily: 'Oxygen');
 class DetailScreen extends StatelessWidget {
   final TourismPlace place;
 
-  DetailScreen({required this.place});
+  DetailScreen({this.place});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class DetailScreen extends StatelessWidget {
 
 class DetailMobilePage extends StatelessWidget {
   final TourismPlace place;
-  const DetailMobilePage({required this.place});
+  const DetailMobilePage({this.place});
 
   @override
   Widget build(BuildContext context) {
@@ -146,7 +146,7 @@ class DetailMobilePage extends StatelessWidget {
 class DetailWebPage extends StatefulWidget {
   final TourismPlace place;
 
-  const DetailWebPage({required this.place});
+  const DetailWebPage({this.place});
 
   @override
   State<DetailWebPage> createState() => _DetailWebPageState();
@@ -194,7 +194,6 @@ class _DetailWebPageState extends State<DetailWebPage> {
                           ),
                           SizedBox(height: 16),
                           Scrollbar(
-                            thumbVisibility: true,
                             controller: _scrollController,
                             child: Container(
                               height: 150,
