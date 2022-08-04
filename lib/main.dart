@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Wisata Kudus',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(),
       home: MainScreen(),
     );
