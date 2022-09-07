@@ -155,6 +155,7 @@ class DetailWebPage extends StatefulWidget {
 class _DetailWebPageState extends State<DetailWebPage> {
   final _scrollController = ScrollController();
 
+  @override
   void dispose() {
     _scrollController.dispose();
     super.dispose();
