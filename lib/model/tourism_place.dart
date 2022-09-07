@@ -1,3 +1,4 @@
+/// Data TourismPlace Class
 class TourismPlace {
   String name;
   String location;
