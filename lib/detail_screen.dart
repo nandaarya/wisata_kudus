@@ -177,7 +177,7 @@ class _DetailWebPageState extends State<DetailWebPage> {
               children: [
                 const Text(
                   'Wisata Bandung',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontFamily: 'Staatliches',
                     fontSize: 32,
                   ),
