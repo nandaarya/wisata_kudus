@@ -7,7 +7,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Wisata Kudus'),
+        title: const Text('Wisata Kudus'),
       ),
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constrains) {
