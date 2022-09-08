@@ -105,7 +105,7 @@ class TourismPlaceGrid extends StatelessWidget {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    SizedBox(height: 8),
+                    const SizedBox(height: 8),
                     Padding(
                       padding: const EdgeInsets.only(left: 8.0),
                       child: Text(
