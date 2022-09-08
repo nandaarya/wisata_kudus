@@ -300,6 +300,8 @@ class _DetailWebPageState extends State<DetailWebPage> {
 }
 
 class FavoriteButton extends StatefulWidget {
+  const FavoriteButton({Key key}) : super(key: key);
+
   @override
   _FavoriteButtonState createState() => _FavoriteButtonState();
 }
