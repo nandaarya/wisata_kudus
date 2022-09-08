@@ -3,6 +3,8 @@ import 'package:wisata_kudus/detail_screen.dart';
 import 'package:wisata_kudus/model/tourism_place.dart';
 
 class MainScreen extends StatelessWidget {
+  const MainScreen({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
