@@ -27,6 +27,8 @@ class MainScreen extends StatelessWidget {
 }
 
 class TourismPlaceList extends StatelessWidget {
+  const TourismPlaceList({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
