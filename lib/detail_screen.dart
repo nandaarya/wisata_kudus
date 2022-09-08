@@ -248,7 +248,7 @@ class _DetailWebPageState extends State<DetailWebPage> {
                                       ),
                                     ],
                                   ),
-                                  FavoriteButton(),
+                                  const FavoriteButton(),
                                 ],
                               ),
                               Row(
