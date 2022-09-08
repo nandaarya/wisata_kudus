@@ -56,7 +56,7 @@ class TourismPlaceList extends StatelessWidget {
                           place.name,
                           style: TextStyle(fontSize: 16.0),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Text(place.location),
