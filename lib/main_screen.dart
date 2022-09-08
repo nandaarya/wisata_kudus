@@ -77,7 +77,7 @@ class TourismPlaceList extends StatelessWidget {
 class TourismPlaceGrid extends StatelessWidget {
   final int gridCount;
 
-  TourismPlaceGrid({this.gridCount});
+  const TourismPlaceGrid({this.gridCount});
 
   @override
   Widget build(BuildContext context) {
