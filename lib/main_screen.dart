@@ -81,6 +81,7 @@ class TourismPlaceList extends StatelessWidget {
 class TourismPlaceGrid extends StatelessWidget {
   final int gridCount;
 
+  // ignore: use_key_in_widget_constructors
   const TourismPlaceGrid({this.gridCount});
 
   @override
