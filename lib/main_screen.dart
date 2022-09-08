@@ -14,7 +14,7 @@ class MainScreen extends StatelessWidget {
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constrains) {
           if (constrains.maxWidth <= 700) {
-            return TourismPlaceList();
+            return const TourismPlaceList();
           } else if (constrains.maxWidth <= 1200) {
             return const TourismPlaceGrid(gridCount: 4);
           } else {
