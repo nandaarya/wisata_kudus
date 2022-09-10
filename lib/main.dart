@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Wisata Kudus',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: MainScreen(),
+      home: const MainScreen(),
     );
   }
 }
