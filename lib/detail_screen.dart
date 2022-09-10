@@ -54,7 +54,7 @@ class DetailMobilePage extends StatelessWidget {
                               },
                             ),
                           ),
-                          FavoriteButton(),
+                          const FavoriteButton(),
                         ]
                     ),
                   ),
