@@ -6,7 +6,7 @@ var informationTextStyle = const TextStyle(fontFamily: 'Oxygen');
 class DetailScreen extends StatelessWidget {
   final TourismPlace place;
 
-  DetailScreen({Key key, this.place}) : super(key: key);
+  const DetailScreen({Key key, this.place}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
