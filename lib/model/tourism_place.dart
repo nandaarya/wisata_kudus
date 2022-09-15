@@ -22,6 +22,7 @@ class TourismPlace {
   });
 }
 
+/// data-data aplikasi
 var tourismPlaceList = [
   TourismPlace(
     name: 'Menara Kudus',
