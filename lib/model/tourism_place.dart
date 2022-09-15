@@ -9,6 +9,7 @@ class TourismPlace {
   String imageAsset;
   List<String> imageAsset2;
 
+  /// constructor
   TourismPlace({
     this.name,
     this.location,
