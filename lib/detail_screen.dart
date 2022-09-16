@@ -23,6 +23,7 @@ class DetailScreen extends StatelessWidget {
   }
 }
 
+/// class untuk tampilan detail pada perangkat mobile
 class DetailMobilePage extends StatelessWidget {
   final TourismPlace place;
   const DetailMobilePage({this.place});
