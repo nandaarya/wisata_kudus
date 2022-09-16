@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wisata_kudus/model/tourism_place.dart';
 
+/// mendeklarasikan suatu text style kedalam variable agar mudah digunakan ulang
 var informationTextStyle = const TextStyle(fontFamily: 'Oxygen');
 
 class DetailScreen extends StatelessWidget {
