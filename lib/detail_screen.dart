@@ -145,6 +145,7 @@ class DetailMobilePage extends StatelessWidget {
   }
 }
 
+/// class untuk tampilan detail pada perangkat web/komputer
 class DetailWebPage extends StatefulWidget {
   final TourismPlace place;
 
